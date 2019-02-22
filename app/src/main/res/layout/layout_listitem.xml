@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/parent_layout"
+    android:background="#E7E7E7">
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/club"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/image"
+        android:layout_alignEnd="@+id/image"
+        android:layout_alignRight="@+id/image"
+        android:src="@mipmap/ic_launcher" />
+
+
+
+    <TextView
+        android:id="@+id/image_name"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_toRightOf="@+id/image"
+        android:textColor="#000000"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:textSize="11dp"/>
+
+    <TextView
+        android:id="@+id/games"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Games"
+        android:layout_toRightOf="@+id/image_name"
+        android:textColor="#000000"
+        android:layout_centerVertical="true"
+        android:textSize="11dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/wins"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/games"
+        android:text="Wins"
+        android:textColor="#80CA00"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/draws"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Draws"
+        android:layout_toRightOf="@+id/wins"
+        android:textColor="#BBB100"
+        android:layout_centerVertical="true"
+        android:textSize="11dp"/>
+
+    <TextView
+        android:id="@+id/losses"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Losses"
+        android:layout_toRightOf="@+id/draws"
+        android:textColor="#FF0000"
+        android:layout_centerVertical="true"
+        android:textSize="11dp"/>
+
+    <TextView
+        android:id="@+id/goals"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Goals"
+        android:layout_toRightOf="@+id/losses"
+        android:textColor="#000000"
+        android:layout_centerVertical="true"
+        android:textSize="11dp"/>
+
+    <TextView
+        android:id="@+id/difference"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Difference"
+        android:layout_toRightOf="@+id/goals"
+        android:textColor="#000000"
+        android:layout_centerVertical="true"
+        android:textSize="11dp"/>
+
+    <TextView
+        android:id="@+id/scoring"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Scoring"
+        android:layout_toRightOf="@+id/difference"
+        android:textColor="#000000"
+        android:layout_centerVertical="true"
+        android:textSize="12dp"
+        android:textStyle="bold"/>
+
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeneralResultsActivity"
+    android:layoutDirection="ltr">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="432dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </android.support.v7.widget.RecyclerView>
+
+    <Spinner
+        android:id="@+id/player1"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp" />
+
+    <Spinner
+        android:id="@+id/player2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/player1"
+        android:layout_marginEnd="5dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp" />
+
+    <ImageButton
+        android:id="@+id/matchup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#AF568E"
+        android:src="@drawable/h2h" />
+
+    <TextView
+        android:id="@+id/wins1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="74dp"
+        android:text=""
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:textSize="20dp"
+        android:textColor="#008040"/>
+
+    <TextView
+        android:id="@+id/draws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/wins1"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="20dp"
+        android:textColor="#C1C100"/>
+
+    <TextView
+        android:id="@+id/wins2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/wins1"
+        android:layout_marginEnd="40dp"
+        android:text=""
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:textSize="20dp"
+        android:textColor="#008040"/>
+
+    <TextView
+        android:id="@+id/goals2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/matchup"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/wins2"
+        android:text=""
+        android:textColor="#0080FF"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_alignLeft="@+id/wins2"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/goals1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/matchup"
+        android:layout_alignStart="@+id/wins1"
+        android:text=""
+        android:textColor="#0080FF"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_alignLeft="@+id/wins1"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

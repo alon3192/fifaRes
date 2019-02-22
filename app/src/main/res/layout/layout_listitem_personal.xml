@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/parent_layout_personal">
+
+    <ImageView
+        android:id="@+id/state"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/win"/>
+
+    <TextView
+        android:id="@+id/playerName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="#000000"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/state"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Res"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/playerName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:text="Wins"
+        android:textColor="#000000"
+        android:layout_centerVertical="true"
+        android:textSize="16dp"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

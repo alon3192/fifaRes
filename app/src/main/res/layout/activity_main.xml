@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:text="Tournament table"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="italic"
+        android:textColor="#2EB3D3"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="564dp"
+        android:layout_marginTop="30dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageButton
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:background="#FF6060"
+        android:src="@drawable/reset"
+        android:text="Reset the table"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:id="@+id/write_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:background="#87F89B"
+        android:src="@drawable/write_result"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp" />
+
+    <ImageButton
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#87F89B"
+        android:src="@drawable/board"
+        android:text="Results" />
+
+
+</RelativeLayout>

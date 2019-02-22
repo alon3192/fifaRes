@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "587084428389",
+    "firebase_url": "https://fifatable-d24bf.firebaseio.com",
+    "project_id": "fifatable-d24bf",
+    "storage_bucket": "fifatable-d24bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587084428389:android:fea262c30acb32ff",
+        "android_client_info": {
+          "package_name": "com.example.user.recyclerview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587084428389-qecru6ok20l47e8lv3gs9koaim9pfp0m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.recyclerview",
+            "certificate_hash": "63865512c41f72ea00ab454fb387a54ec3f2b292"
+          }
+        },
+        {
+          "client_id": "587084428389-0ubcvc3sbair36qi3btujsht7nlupmqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfFWbN96IrjIdAWkkRZOfMPk3PhJ9NgKo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587084428389-0ubcvc3sbair36qi3btujsht7nlupmqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
