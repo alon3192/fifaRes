@@ -130,7 +130,15 @@ public class ChampoinshipTableActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         RecyclerViewAdapterChampionships adapter = new RecyclerViewAdapterChampionships(this, mNames, mImageUrls, mChampinships, mClubs);
         recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        //recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this){
+            @Override
+            public boolean checkLayoutParams(RecyclerView.LayoutParams lp) {
+                // force height of viewHolder here, this will override layout_height from xml
+                lp.height = getHeight() / 6;
+                return true;
+            }
+        });
     }
 
 }

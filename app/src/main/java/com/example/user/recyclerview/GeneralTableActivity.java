@@ -128,7 +128,16 @@ public class GeneralTableActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, mClubs, mNames, mImageUrls, mGames, mWins, mDraws, mLosses, mGoals_scored, mGoals_got, mDifference, mScoring);
         recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+       // recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(this){
+            @Override
+            public boolean checkLayoutParams(RecyclerView.LayoutParams lp) {
+                // force height of viewHolder here, this will override layout_height from xml
+                lp.height = getHeight() / 6;
+                return true;
+            }
+        });
     }
 
     private void sortByScore()
