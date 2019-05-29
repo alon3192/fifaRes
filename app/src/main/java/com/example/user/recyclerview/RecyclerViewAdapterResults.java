@@ -1,6 +1,7 @@
 package com.example.user.recyclerview;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -45,10 +46,21 @@ public class RecyclerViewAdapterResults extends RecyclerView.Adapter<RecyclerVie
         if(players1Scored.get(position)>players2Scored.get(position))
         {
             holder.playerName1.setTypeface(null, Typeface.BOLD);
+            holder.playerName1.setTextColor(Color.parseColor("#22B14C"));
+            holder.playerName2.setTextColor(Color.parseColor("#D70000"));
+
         }
         if(players1Scored.get(position)<players2Scored.get(position))
         {
             holder.playerName2.setTypeface(null, Typeface.BOLD);
+            holder.playerName1.setTextColor(Color.parseColor("#D70000"));
+            holder.playerName2.setTextColor(Color.parseColor("#22B14C"));
+        }
+
+        if(players1Scored.get(position) == players2Scored.get(position))
+        {
+            holder.playerName1.setTextColor(Color.parseColor("#D2D200"));
+            holder.playerName2.setTextColor(Color.parseColor("#D2D200"));
         }
 
     }
